@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+$titlecolor: #ffaf40;
+$maincolor: #4b4b4b;
+$curlyfont: "Dancing Script", cursive;
+$mainfont: "Righteous", cursive;
+nav {
+    position: fixed !important;
+    top: 0;
+    background-color: transparent !important;
+    color: turquoise;
+}
+.img {
+    background-image: url(../img/dağ.png);
+    background-repeat: repeat-x;
+    height: 52vh;
+    transition: background-image 0.5s ease;
+    &:hover {
+        background-image: url(../img/hover1.jpg);
+    }
+    div {
+        h2 {
+            text-align: center;
+            font-family: "Dancing Script", cursive;
+            font-size: xxx-large;
+            color: $titlecolor;
+        }
+        p {
+            color: $titlecolor;
+            text-align: center;
+            font-family: "Righteous", cursive;
+        }
+    }
+}
+.first {
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p {
+        text-align: center;
+        width: 36%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: $mainfont;
+        color: $maincolor;
+    }
+}
+
+.second {
+    h2 {
+        background-color: #bff5ff;
+        text-align: center;
+        font-size: xx-large;
+        color: $maincolor;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .row {
+        span {
+            background-image: url(../img/background2.jpg);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 50%;
+            h4 {
+                text-align: center;
+                color: $titlecolor;
+                background-color: #fbfaf5;
+            }
+            p {
+                text-align: left;
+                width: 44%;
+                margin-top: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: $mainfont;
+                color: $maincolor;
+            }
+            .p {
+                width: 70%;
+            }
+        }
+    }
+}
+
+.third {
+    background-color: #bff5ff;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    h4 {
+        text-align: center;
+        font-family: $curlyfont;
+        font-size: 30px;
+    }
+    ul li {
+        list-style: none;
+        display: inline;
+        margin-left: 10%;
+        font-size: larger;
+        a {
+            text-decoration: none;
+            color: $titlecolor;
+            font-weight: bold;
+        }
+    }
+}
+footer {
+    text-align: center;
+}
+@media screen and (max-width: 790px) {
+    nav {
+        position: absolute !important;
+    }
+    p {
+        display: block;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .second .row span {
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 15px;
+    }
+    .second .row img {
+        display: none;
+    }
+    .third {
+        width: auto;
+        margin-top: 15px;
+        li {
+            margin-left: 5% !important;
+        }
+    }
+}
