@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+nav {
+  position: fixed !important;
+  top: 0;
+  background-color: transparent !important;
+  color: turquoise;
+}
+
+.img {
+  background-image: url(../img/dağ.png);
+  background-repeat: repeat-x;
+  height: 52vh;
+  -webkit-transition: background-image 0.5s ease;
+  transition: background-image 0.5s ease;
+}
+
+.img:hover {
+  background-image: url(../img/hover1.jpg);
+}
+
+.img div h2 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: xxx-large;
+  color: #ffaf40;
+}
+
+.img div p {
+  color: #ffaf40;
+  text-align: center;
+  font-family: "Righteous", cursive;
+}
+
+.first .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first p {
+  text-align: center;
+  width: 36%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Righteous", cursive;
+  color: #4b4b4b;
+}
+
+.second h2 {
+  background-color: #bff5ff;
+  text-align: center;
+  font-size: xx-large;
+  color: #4b4b4b;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.second .row span {
+  background-image: url(../img/background2.jpg);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50%;
+}
+
+.second .row span h4 {
+  text-align: center;
+  color: #ffaf40;
+  background-color: #fbfaf5;
+}
+
+.second .row span p {
+  text-align: left;
+  width: 44%;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Righteous", cursive;
+  color: #4b4b4b;
+}
+
+.second .row span .p {
+  width: 70%;
+}
+
+.third {
+  background-color: #bff5ff;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.third h4 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+}
+
+.third ul li {
+  list-style: none;
+  display: inline;
+  margin-left: 10%;
+  font-size: larger;
+}
+
+.third ul li a {
+  text-decoration: none;
+  color: #ffaf40;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 790px) {
+  nav {
+    position: absolute !important;
+  }
+  p {
+    display: block;
+    width: auto !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .second .row span {
+    width: auto !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-top: 15px;
+  }
+  .second .row img {
+    display: none;
+  }
+  .third {
+    width: auto;
+    margin-top: 15px;
+  }
+  .third li {
+    margin-left: 5% !important;
+  }
+}
