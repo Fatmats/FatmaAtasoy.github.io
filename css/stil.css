@@ -79,6 +79,7 @@ nav {
   margin-right: auto;
   font-family: "Righteous", cursive;
   color: #4b4b4b;
+  font-size: large;
 }
 
 .second .row span .p {
@@ -142,4 +143,5 @@ footer {
     margin-left: 5% !important;
   }
 }
+
 /*# sourceMappingURL=stil.css.map */
